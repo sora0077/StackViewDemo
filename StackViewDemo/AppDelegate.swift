@@ -8,6 +8,11 @@
 
 import UIKit
 
+
+func animate(block: () -> Void) {
+    UIView.animateWithDuration(0.3, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0.1, options: [], animations: block, completion: nil)
+}
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
